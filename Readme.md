@@ -25,12 +25,20 @@ Acesse a pasta do projeto
 cd DesafioCOX
 
 ```
+Baixar e instalar as dependencias do projeto
+
+```
+npm install
+
+```
+
 Execute o comando
 
 ```
 npm run cypress:open
 
 ```
+
 ### Casos de Teste:
 - **Cenário 1: Login Válido**
 _Descrição do teste:_ Este caso de teste consiste em verificar o acesso ao login, utilizando usuario e senha correta.
