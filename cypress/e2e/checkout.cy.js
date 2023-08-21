@@ -5,7 +5,7 @@ describe('campos obrigatorios', () => {
         cy.get('[data-test="password"]').type(Cypress.env('password'));
         cy.get('#login-button').click();
     })
-    //Este caso de teste consiste em verificar se as mensagens de validação estão sendo exibidas corretamente ao tentar prosseguir sem preenchelas. 
+    //Este caso de teste consiste em verificar se as mensagens de validação estão sendo exibidas ao tentar prosseguir sem preencher os campos obrigatorios corretamente. 
     it('validar', () => {
         cy.contains('ADD TO CART').click();
         cy.get('[data-icon="shopping-cart"]').click();

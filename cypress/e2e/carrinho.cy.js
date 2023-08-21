@@ -6,8 +6,8 @@ describe('carrinho', () => {
         cy.get('#login-button').click();
     })
 
-    // Este caso de teste consiste em verificar se os produtos foram adicionados corretamente ao carrinho.
-    //e consiste em verificar o contador de itens do icone carrinho.
+    // Este caso de teste consiste em verificar se os produtos foram adicionados corretamente ao carrinho,
+    //tambem consiste em verificar o contador de itens do icone carrinho.
     it('adicionar produto', () => {
         cy.contains('ADD TO CART').click();
         cy.get('[data-icon="shopping-cart"]').click();
@@ -17,7 +17,7 @@ describe('carrinho', () => {
     })
 
     //Este caso de teste consiste em verificar se 2 produto que foi adicionado ao carrinho foi removido 1 produto do carrinho, restando assim o total de 1 produtos.
-    // e consiste em verificar o contador de itens do icone carrinho apos remover produto.
+    // Tambem consiste em verificar o contador de itens do icone carrinho apos remover produto.
     it('remover produto', () => {
         cy.contains('ADD TO CART').click();
         cy.contains('ADD TO CART').click();

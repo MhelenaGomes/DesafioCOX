@@ -1,6 +1,6 @@
 describe('login', () => {
 
-  // Este caso de teste consiste em verificar o acesso ao login, utilizando usuario e senha correta
+  // Este caso de teste consiste em verificar o acesso ao login, utilizando usuario e senha correta.
   it('sucesso', () => {
     cy.visit(Cypress.env('loginUrl'))
     cy.get('[data-test="username"]').type(Cypress.env('username'))
@@ -19,7 +19,7 @@ describe('login', () => {
     cy.get('[data-test="error"]').should('contain', 'Epic sadface: Username and password do not match any user in this service')
   })
 
-  // logout
+  // Este caso de teste consiste em verificar se o logout é efetuado com sucesso.
   it('logout', () => {
     cy.visit(Cypress.env('loginUrl'))
     cy.get('[data-test="username"]').type(Cypress.env('username'))
